@@ -1,0 +1,210 @@
+.body{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+body._night {
+    background: #01042e;
+}
+.wrapper{
+    overflow: hidden;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calc{
+    border: 3px solid #5828a1;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+}
+.calc__body{
+    background: rgb(132,34,182);
+    background: linear-gradient(133deg, rgba(132,34,182,1) 0%, rgba(73,17,158,1) 100%);
+    box-shadow: inset 0 0 5px #0a0215;
+    max-width: 320px;
+}
+.calc__part--top {
+    padding: 20px;
+    background: rgb(132,34,182);
+    background: linear-gradient(133deg, rgb(94, 16, 133) 0%, rgba(73,17,158,1) 100%);
+}
+.calc__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.calc__logo{
+    width: 100px;
+}
+.calc__logo img{
+    width: 100%;
+}
+.calc__solar-battery{
+    background: rgb(159,171,163);
+    background: linear-gradient(157deg, rgb(158, 171, 162) 0%, rgba(75,75,75,1) 100%);
+    height: 20px;
+    width: 100px;
+    box-shadow: inset 0 0 3px rgb(2, 2, 2);
+    display: flex;
+}
+.calc__battery-box{
+    flex: 0 0 25%;
+    border-right: 1px solid #777;
+}
+.calc__battery-box:last-child{
+    flex: 0 0 25%;
+    border-right: none;
+}
+.calc__conclusion{
+    width: 270px;
+    height: 50px;
+    padding: 10px;
+    color: #555;
+    background-color: #DCD9D4;
+    background: #C9CCD3;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;
+    box-shadow: inset 0 0 10px #0a0215;
+    border:  3px solid #5828a1;
+    font-size: 24px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    overflow: hidden;
+}
+.calc__part--bottom{
+    padding:10px 20px 20px 20px;
+}
+
+.calc__night-btn{
+    background-color: rgba(255, 217, 0, 0.736);
+    border: 2px solid rgba(250, 213, 3, 0.768);
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 3px;
+    margin-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.calc__night-btn:active{
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+}
+.calc__night-btn svg{
+    fill:#777;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.calc__buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.btn{
+    flex: 0 0 23%;
+}
+
+.btn{
+    background: rgb(2,25,103);
+    background: linear-gradient(288deg, rgba(2,25,103,1) 0%, rgba(19,14,89,1) 100%);
+    color: #f5f7fa;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 2px #0a0215, inset 0 0 1px #0a0215;
+    border: 2px solid rgba(19,14,89,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease;
+    -webkit-transition: text-shadow 0.3s ease;
+    -moz-transition: text-shadow 0.3s ease;
+    -ms-transition: text-shadow 0.3s ease;
+    -o-transition: text-shadow 0.3s ease;
+}
+.btn:active{
+    border: 2px solid rgb(5,19,66);
+    box-shadow: 0 0 0px #0a0215, inset 0 0 1.5px #0a0215;
+    outline: none;
+}
+
+
+body._night {
+}
+.body._night .calc__night-btn{
+    background-color: rgba(255, 217, 0, 0.903);
+    border: 2px solid rgb(250, 196, 3);
+
+}
+.body._night .calc__night-btn svg{
+    fill: #fdfbfbe0;
+
+}
+body._night  .btn{
+    text-shadow: 0 0 7px #fff;
+}
+.calc__conclusion{
+    transition: color 0.3s ease, background 0.3s ease;
+    -webkit-transition: color 0.3s ease, background 0.3s ease;
+    -moz-transition: color 0.3s ease, background 0.3s ease;
+    -ms-transition: color 0.3s ease, background 0.3s ease;
+    -o-transition: color 0.3s ease, background 0.3s ease;
+}
+body._night .calc__conclusion{
+    color: #555;
+    background: rgba(255, 255, 255, 0.924);
+}
+
+@media  (max-width:320px){
+    .calc__body{
+        max-width: 300px;
+    }
+    .calc__conclusion{
+        width: 260px;
+        height: 50px;
+        background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    }
+}
+
